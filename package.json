@@ -17,10 +17,12 @@
     "url": "https://github.com/idindrakusuma/react-boilerplate/issues"
   },
   "homepage": "https://github.com/idindrakusuma/react-boilerplate",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
     "webpack": "^4.36.1",
     "webpack-cli": "^3.3.6"
   }
