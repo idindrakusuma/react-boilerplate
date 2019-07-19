@@ -6,4 +6,5 @@ module.exports = merge(baseConfig, {
   devServer: {
     port: 4000, // you can custom to port whatever you want
   },
+  devtool: 'source-map', // this properties make us easy to debug in devtool 
 });
