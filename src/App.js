@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import Example from './components/Example';
+import { hot } from 'react-hot-loader';
 
+import Example from './components/Example';
 import './styles.css';
 
 function App() {
@@ -8,14 +9,12 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hello Kusuma y!</h1>
-      <h2>Current Count: { count }</h2>
+      <h1>React Boilerplate by Indra!</h1>
+      <h2 className={count > 10 ? 'warning' : null}>Current Count: { count }</h2>
       <button onClick={() => setCount(count - 1)}>Kurangi (-)</button>
       <button onClick={() => setCount(count + 1)}>Tambah (+)</button>
-      <div> ------- </div>
-      <Example />
     </div>
   );
 }
 
-export default App;
+export default hot(module)(App);
