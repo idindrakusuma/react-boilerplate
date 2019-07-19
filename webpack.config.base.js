@@ -16,6 +16,7 @@ module.exports = {
         exclude: /node_modules/, // node_mod ules should be exclude because we dont want to compile NODE_MODULES
         options: {
           presets: ['@babel/preset-env', '@babel/preset-react'],
+          plugins: ['@babel/plugin-proposal-class-properties'],
           // so we need `@babel/preset-env` for transform our code to old javascript syntax.
           // and we need `@babel/preset-react` for compile our JSX code to old javascript syntax
         },
