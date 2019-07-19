@@ -21,6 +21,11 @@ module.exports = {
           // and we need `@babel/preset-react` for compile our JSX code to old javascript syntax
         },
       },
+      {
+        test: /\.css$/, // only load while `.css` type
+        use: ['style-loader', 'css-loader'], // this loader for style loader
+        exclude: /node_modules/,
+      },
     ],
   },
   plugins: [
