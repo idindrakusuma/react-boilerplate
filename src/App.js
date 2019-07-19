@@ -1,3 +1,10 @@
+import '@babel/polyfill';
+/**
+ * import @babel/polyfill
+ * this package for handler older browser
+ * IF target browser new browser or Chrome > 69. You can remove this file
+ */
+
 import React, { useState } from 'react';
 import { hot } from 'react-hot-loader';
 
