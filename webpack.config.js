@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: "production",
@@ -12,7 +13,7 @@ module.exports = {
       {
         test: /\.js$/, // regex expression for get all `.js` file
         loader: "babel-loader",
-        exclude: /node_modules/, // node_modules should be exclude because we dont want to compile NODE_MODULES
+        exclude: /node_modules/, // node_mod ules should be exclude because we dont want to compile NODE_MODULES
         options: {
           presets: ["@babel/preset-env", "@babel/preset-react"]
           // so we need `@babel/preset-env` for transform our code to old javascript syntax.
@@ -20,5 +21,8 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  plugins: [new HtmlWebpackPlugin({
+    template: './src/index.html',
+  })],
 };
