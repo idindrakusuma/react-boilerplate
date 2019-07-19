@@ -9,10 +9,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>React Boilerplate by Indra!</h1>
+      <h1>React Boilerplate!</h1>
       <h2 className={count > 10 ? 'warning' : null}>Current Count: { count }</h2>
-      <button onClick={() => setCount(count - 1)}>Kurangi (-)</button>
-      <button onClick={() => setCount(count + 1)}>Tambah (+)</button>
+      <button className="btn" onClick={() => setCount(count - 1)}>Kurangi (-)</button>
+      <button className="btn" onClick={() => setCount(count + 1)}>Tambah (+)</button>
     </div>
   );
 }

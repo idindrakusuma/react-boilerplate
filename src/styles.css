@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+.btn {
+  padding: 8px;
+  border-radius: 8px;
+  border-color: aliceblue;
+  color: #555;
+  border-style: none;
+  margin: 4px;
+}
+
 .warning {
   color: orange;
 }
