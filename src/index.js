@@ -1,3 +1,3 @@
-import greeting from './great';
+import getGreeting from './great';
 
-console.log(greeting);
+console.log(getGreeting('Indra!'));
