@@ -14,24 +14,6 @@ module.exports = {
         test: /\.js$/, // regex expression for get all `.js` file
         loader: 'babel-loader',
         exclude: /node_modules/, // node_mod ules should be exclude because we dont want to compile NODE_MODULES
-        options: {
-          presets: [
-            [
-              '@babel/preset-env',
-              {
-                targets: ['last 2 versions', 'not dead', 'not < 2%'],
-              },
-            ],
-            '@babel/preset-react',
-          ],
-          plugins: [
-            'react-hot-loader/babel',
-            '@babel/plugin-proposal-class-properties',
-            '@babel/plugin-syntax-dynamic-import',
-          ],
-          // so we need `@babel/preset-env` for transform our code to old javascript syntax.
-          // and we need `@babel/preset-react` for compile our JSX code to old javascript syntax
-        },
       },
       {
         test: /\.css$/, // only load while `.css` type
