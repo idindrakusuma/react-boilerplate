@@ -11,6 +11,6 @@ module.exports = merge(baseConfig, {
       openAnalyzer: false,
     }),
   ],
-  // for more details of BundleAnalyzer, 
+  // for more details of BundleAnalyzer,
   // check this out https://github.com/webpack-contrib/webpack-bundle-analyzer
 });

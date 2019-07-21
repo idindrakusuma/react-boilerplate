@@ -17,11 +17,14 @@ function App() {
   return (
     <div className="App">
       <h1>React Boilerplate!</h1>
-      <h2 className={count > 10 ? 'warning' : null}>Current Count: {count}</h2>
-      <button className="btn btn-warning-outline " onClick={() => setCount(count - 1)}>
+      <h2 className={count > 10 ? 'warning' : null}>
+        Current Count:
+        {count}
+      </h2>
+      <button className="btn btn-warning-outline " type="button" onClick={() => setCount(count - 1)}>
         Kurangi (-)
       </button>
-      <button className="btn btn-warning" onClick={() => setCount(count + 1)}>
+      <button className="btn btn-warning" type="button" onClick={() => setCount(count + 1)}>
         Tambah (+)
       </button>
       {/* only render when component needed */}

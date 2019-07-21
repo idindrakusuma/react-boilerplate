@@ -23,13 +23,20 @@ class Example extends React.Component {
     return (
       <div>
         <h2>Class Component</h2>
-        <h3>Current Counter {counter}</h3>
+        <h3>
+          Current Counter
+          {counter}
+        </h3>
 
-        <button onClick={this.handlePlus}>Tambah (+)</button>
-        <button onClick={this.handleMinus}>Kurang (-)</button>
+        <button type="button" onClick={this.handlePlus}>
+          Tambah (+)
+        </button>
+        <button type="button" onClick={this.handleMinus}>
+          Kurang (-)
+        </button>
       </div>
     );
   }
-};
+}
 
 export default Example;
