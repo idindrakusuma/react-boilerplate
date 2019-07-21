@@ -6,9 +6,8 @@
   "scripts": {
     "test": "jest",
     "build": "webpack --config webpack.config.prod.js",
-    "dev": "webpack-dev-server --open --config webpack.config.dev.js",
-    "dev:hot": "npm run dev -- --hot",
-    "start": "npm run dev:hot",
+    "dev": "webpack-dev-server --open --hot --config webpack.config.dev.js",
+    "start": "npm run dev",
     "lint": "eslint ./"
   },
   "husky": {
@@ -35,6 +34,7 @@
   "homepage": "https://github.com/idindrakusuma/react-boilerplate",
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-hot-loader": "^4.12.8"
